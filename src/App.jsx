@@ -2,7 +2,7 @@ import React from 'react'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+    <div className="min-h-screen bg-linear-to-r from-blue-500 to-purple-600 flex items-center justify-center">
       <div className="bg-white p-8 rounded-2xl shadow-2xl">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
           React 19 + Vite 8 + Tailwind 4
