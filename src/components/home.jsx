@@ -101,8 +101,10 @@ const Home = () => {
                   alt={card.alt}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-white text-xl md:text-2xl font-bold text-center px-4 transform transition-transform duration-300 group-hover:scale-105">
+                <div className="absolute inset-0 bg-black/60 md:opacity-0 md:group-hover:opacity-100 
+                transition-opacity duration-300 flex items-center justify-center">
+                  <p className="text-white text-xl md:text-2xl font-bold text-center px-4 
+                  transform transition-transform duration-300 md:group-hover:scale-105">
                     {card.title}
                   </p>
                 </div>
