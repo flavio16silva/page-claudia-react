@@ -1,21 +1,46 @@
-import React from 'react'
+import { Navbar } from './components/navbar'
+import { Home } from './components/home'
+import { Footer } from './components/footer'
 
-function App() {
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Outlet
+} from 'react-router-dom'
+
+const Layout = () => {
   return (
-    <div className="min-h-screen bg-linear-to-r from-blue-500 to-purple-600 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-2xl shadow-2xl">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          React 19 + Vite 8 + Tailwind 4
-        </h1>
-        <p className="text-gray-600 text-lg">
-          Projeto configurado com sucesso! 🚀
-        </p>
-        <button className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-          Testar Tailwind
-        </button>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
   )
 }
 
-export default App
+
+const App = () => {
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        {/* <Route index element={<Home />} />
+        <Route path="/sobre" element={<About />} />
+        <Route path="/projetos" element={<Projects />} />
+        <Route path="/formacao" element={<Formacao />} />
+        <Route path="/resumo" element={<Resumo />} />
+        <Route path="/contato" element={<Contato />} /> */}
+      </Route>
+    )
+  )
+
+  return (
+    <RouterProvider router={router} />
+  )
+
+}
+
+export { App }
+
