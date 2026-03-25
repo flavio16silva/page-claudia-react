@@ -1,26 +1,91 @@
 import { cards } from "../data/cards"
 import { frases } from "../data/frases"
 import { escolha } from "../data/escolha"
-import { useState, useEffect } from "react"
+import { FaWhatsapp } from 'react-icons/fa'
 
 const Home = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [isPaused, setIsPaused] = useState(false)
-  const totalItems = escolha.length
-
-  useEffect(() => {
-    if (isPaused) return
-
-    const interval = setInterval(() => {
-      setCurrentIndex(prev => (prev + 1) % totalItems)
-    }, 4000)
-
-    return () => clearInterval(interval)
-  }, [isPaused, totalItems])
-
   return (
     <>
-      <div id="mural" className="py-5 pt-32 bg-red-300">
+      <div className="bg-orange-700 py-3 pt-12">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-8 max-w5xl mx-auto">
+
+            <div className="flex-1 texte-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                Claudia Palma
+              </h2>
+              <p className="text-white mb-6">CRP: 00.000</p>
+
+              <div className="bg-red-50 p-5 rounded-xl mb-6">
+                <p className="text-lg md:text-xl text-red-700 italic">
+                  Como é difícil começar, mas como é fácil conseguir quando você não está sozinho(a).
+                </p>
+              </div>
+
+              <p className="text-white leading-relaxed text-justify mb-4">
+                Acredito que cada pessoa tem dentro de si a força para se transformar.
+                Minha missão é caminhar ao seu lado, oferecendo um espaço seguro para
+                que você possa se reconhecer, se acolher e construir uma vida mais leve.
+              </p>
+            </div>
+
+            <div className="flex-1 flex justify-center">
+              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl border-4 border-white ring-2 ring-red-200 mb-4 ">
+                <img
+                  src="/clau_foto.png"
+                  alt="Dra. Claudia Palma"
+                  className="w-full h-full object-cover animate-breathingZoom"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="bg-white py-12 shadow-inner">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-orange-600 mb-4">
+              Pronto para dar o primeiro passo?
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Agende sua conversa e comece sua jornada.
+            </p>
+
+            <div className="flex justify-center">
+
+              <div className="relative inline-block">
+                {/* Fundo pulsante */}
+                <div className="absolute inset-0 bg-red-400 rounded-full blur-xl animate-pulseBright"></div>
+
+                {/* Botão principal */}
+                <a
+                  href="https://wa.me/5511999999999"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative flex items-center gap-3 bg-red-400 text-white px-8 py-4 rounded-full 
+                     font-semibold text-lg shadow-xl hover:shadow-2xl 
+                     transition-all duration-300 z-10 hover:bg-orange-700
+                     animate-pulseButton"
+                >
+                  {/* Ícone WhatsApp */}
+                  <FaWhatsapp size={24} />
+                  <span>Agende sua conversa</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Texto adicional */}
+            <p className="text-sm text-gray-500 mt-6">
+              Atendimento presencial e online • Primeira conversa sem compromisso
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="mural" className="py-5 pt-32 bg-orange-700">
         <div className="container mx-auto px-4">
           <h3 className="text-2xl md:text-3xl font-bold text-center text-white mb-8 md:mb-12">
             Você não precisa enfrentar isso sozinho(a)!
@@ -66,58 +131,62 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-red-200 py-2">
+      <div className="bg-orange-700 py-4">
         <div className="container mx-auto px-4">
-          <p className="text-2xl md:text-3xl font-bold text-center text-white mb-8 md:mb-12 mt-10">Por que caminhar comigo?</p>
-          <div className="block md:hidden relative overflow-hidden min-h-64">
-            {escolha.map((item, index) => (
-              <div key={item.id}
-                className={`transition-opacity duration-500 ${index === currentIndex
-                  ? "opacity-100"
-                  : "opacity-0 absolute inset-0"
-                  }`}
-              >
-                <div className="bg-white p-2 rounded-xl shadow-md text-center max-w-md mx-auto"
-                  onMouseEnter={() => setIsPaused(true)}
-                  onMouseLeave={() => setIsPaused(false)}
-                >
-                  <item.icone className="text-4xl text-green-600 mb-4" />
-                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                  <p className="text-gray-600">{item.descricao}</p>
-                </div>
+          <p className="text-2xl md:text-3xl font-bold text-center text-white mb-8 md:mb-12 mt-10">
+            Por que caminhar comigo?
+          </p>
+
+          {/* GRID DOS CARDS - 4 CARDS EM 2 COLUNAS */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {escolha.map(item => (
+              <div
+                key={item.id}
+                className="bg-orange-700 p-6 rounded-xl 
+                  transition-all duration-400 ease-out 
+                  hover:shadow-xl hover:bg-red-300 
+                  text-center border-2 border-white/50">
+                <item.icone className="text-4xl text-white mb-2" />
+                <h3 className="text-xl text-white font-bold mb-6">{item.title}</h3>
+                <p className="text-white">{item.descricao}</p>
               </div>
             ))}
           </div>
+        </div>
+      </div>
 
-          {/* SLIDE */}
-          <div className="hidden md:block overflow-hidden">
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {escolha.map(item => (
-                <div key={item.id} className="w-full shrink-0">
-                  <div className="bg-white p-6 rounded-xl shadow-md text-center max-w-md mx-auto">
-                    <item.icone className="text-4xl text-green-600 mb-4" />
-                    <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                    <p className="text-gray-600">{item.descricao}</p>
-                  </div>
-                </div>
-              ))}
+      <div className="bg-white py-12 shadow-inner">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-orange-600 mb-4">
+              Estou aqui para ajudar você.
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Fale, desabafe, pense, supere seus desafios.
+            </p>
+
+            <div className="flex justify-center">
+
+              <div className="relative inline-block">
+                {/* Fundo pulsante */}
+                <div className="absolute inset-0 bg-red-500 rounded-full blur-xl"></div>
+
+                {/* Botão principal */}
+                <a
+                  href="https://wa.me/5511999999999"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative flex items-center gap-3 bg-red-400 text-white px-8 py-4 rounded-full 
+                     font-semibold text-lg shadow-xl hover:shadow-2xl hover:bg-orange-700
+                     transition-all duration-300 z-10
+                     animate-pulseButton"
+                >
+                  {/* Ícone WhatsApp */}
+                  <FaWhatsapp size={24} />
+                  <span>Ainda com dúvida? Vamos conversar!</span>
+                </a>
+              </div>
             </div>
-          </div>
-
-          {/* Pontinhos dos cards */}
-          <div className="flex justify-center gap-2 mt-1">
-            {escolha.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all ${index === currentIndex ? "bg-white w-4" : "bg-white/50"
-                  }`}
-                aria-label={`Ir para slide ${index + 1}`}
-              />
-            ))}
           </div>
         </div>
       </div>
