@@ -14,12 +14,12 @@ const Navbar = () => {
     { path: "/contato", label: "contato" }
   ]
   return (
-    <nav className="absolute top-8 left-0 right-0 z-50" >
+    <nav className="top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-md">
       <div className={containerClass}>
         <div className="flex items-center h-16">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white focus:outline-none order-first"
+            className="md:hidden text-gray-800 focus:outline-none order-first"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
@@ -29,31 +29,31 @@ const Navbar = () => {
               )}
             </svg>
           </button>
+
+          {/* Links desktop */}
           <ul className="hidden md:flex md:space-x-12">
             {navItems.map(item => (
               <li key={item.path}>
                 <NavLink
                   to={item.path}
-                  className={({ isActive }) =>
-                    `uppercase text-sm lg:text-lg tracking-widest transition-colors
-                    ${isActive ? "text-red-400" : "text-white "}`}
+                  className="uppercase text-sm lg:text-lg tracking-widest transition-colors"
                 >
                   {item.label}
                 </NavLink>
               </li>
             ))}
           </ul>
+
+          {/* Menu mobile */}
           {isMenuOpen && (
-            <div className="absolute top-24 left-0 bg-black/95 backdrop-blur-sm md:hidden w-64 border-r border-gray-800 shadow-xl">
+            <div className="absolute top-16 left-0 bg-white backdrop-blur-sm md:hidden w-64 border-r border-gray-800 shadow-xl">
               <ul className="flex flex-col items-center py-4 px-6 space-y-4">
                 {navItems.map(item => (
                   <li key={item.path} className="w-full">
                     <NavLink
                       to={item.path}
                       onClick={() => setIsMenuOpen(false)}
-                      className={({ isActive }) =>
-                        `uppercase text-sm tracking-widest transition-colors block py-2 w-full text-center
-                    ${isActive ? "text-red-400" : "text-white hover:text-red-400"}`}
+                      className="uppercase text-sm tracking-widest transition-colors block py-2 w-full text-center"
                     >
                       {item.label}
                     </NavLink>
