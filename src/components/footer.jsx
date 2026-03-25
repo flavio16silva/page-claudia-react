@@ -3,18 +3,18 @@ import { FaDove } from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-4 mt-12">
+    <footer className="bg-orange-700 text-white py-4 mt-12">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center gap-2 mb-8">
-          <FaDove className="text-2xl" />
-          <p className="text-center text-2xl md:text-center text-white ">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-8">
+          <FaDove className="text-2xl md:text-3xl shrink-0 text-white/80" />
+          <p className="text-center text-xl md:text-2xl md:text-center text-white max-w-2xl">
             Aqui, sua história encontra um espaço seguro para ser ouvida.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
             <p className="text-base">Dra. Claudia Palma - Psicóloga</p>
-            <p className="text-base text-gray-400">CRP: 00.000</p>
+            <p className="text-base text-white">CRP: 00.000</p>
           </div>
           <div className="flex gap-6">
             {contatos.map(contato => (
@@ -30,7 +30,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <p className="text-base text-gray-500">
+          <p className="text-base text-white">
             © {new Date().getFullYear()} - Todos os direitos reservados
           </p>
         </div>
