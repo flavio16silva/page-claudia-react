@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-
+/* Foto */
 @keyframes breathingZoom {
   0% {
     transform: scale(1);
@@ -13,6 +13,7 @@
   }
 }
 
+/* Botões */
 .animate-breathingZoom {
   animation: breathingZoom 8s ease-in-out infinite;
 }
