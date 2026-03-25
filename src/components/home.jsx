@@ -119,7 +119,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {frases.map(frase => (
               <div key={frase.id}
-                className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 hover:-translate-y-1 transition-shadow duration-300 border border-gray-100 flex flex-col h-full"
+                className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 hover:-translate-y-1 transition-all duration-500 ease-out border border-gray-100 flex flex-col h-full"
               >
                 <p className="text-gray-700 text-lg text-justify italic mb-4 grow">
                   {frase.texto}
