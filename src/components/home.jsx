@@ -14,7 +14,7 @@ const Home = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
                 Claudia Palma
               </h2>
-              <p className="text-white mb-6">CRP: 00.000</p>
+              <p className="text-white mb-6">CRP: 03/17035</p>
 
               <div className="bg-red-50 p-5 rounded-xl mb-6">
                 <p className="text-lg md:text-xl text-red-700 italic">
