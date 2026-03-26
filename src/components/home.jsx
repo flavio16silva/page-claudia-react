@@ -3,7 +3,7 @@ import { frases } from "../data/frases"
 import { escolha } from "../data/escolha"
 import { FaWhatsapp } from 'react-icons/fa'
 
-const Home = () => {
+const Inicio = () => {
   return (
     <>
       <div className="bg-orange-700 py-3 pt-12">
@@ -196,4 +196,4 @@ const Home = () => {
   )
 }
 
-export { Home }
+export { Inicio }
