@@ -1,6 +1,7 @@
 import { Navbar } from './components/navbar'
-import { Home } from './components/home'
+import { Inicio } from './components/home'
 import { Footer } from './components/footer'
+import { Sobre } from './components/sobre'
 
 import {
   Route,
@@ -25,9 +26,9 @@ const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+        <Route index element={<Inicio />} />
+        <Route path="/sobre" element={<Sobre />} />
         {/* <Route index element={<Home />} />
-        <Route path="/sobre" element={<About />} />
         <Route path="/projetos" element={<Projects />} />
         <Route path="/formacao" element={<Formacao />} />
         <Route path="/resumo" element={<Resumo />} />
