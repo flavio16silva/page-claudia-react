@@ -1,4 +1,12 @@
-import { FaWhatsapp } from 'react-icons/fa'
+import {
+  FaWhatsapp,
+  FaSmile,
+  FaCalendarAlt,
+  FaUsers,
+  FaHeart,
+  FaStethoscope,
+  FaLeaf
+} from 'react-icons/fa'
 
 const Sobre = () => {
   return (
@@ -69,7 +77,7 @@ const Sobre = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-orange-600 mb-4">
-              Pronto para dar o primeiro passo?
+              Vamos caminhar juntos?
             </h2>
             <p className="text-lg text-gray-600 mb-8">
               Agende sua conversa e comece sua jornada.
@@ -106,96 +114,156 @@ const Sobre = () => {
           </div>
         </div>
       </div>
+
+      {/* Habilidades */}
+
+      <div className="py-16 bg-orange-700">
+        <div className="container mx-auto px-4">
+          <h3 className="text-3xl font-bold text-center text-white mb-12">
+            Habilidades
+          </h3>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-4xl mx-auto">
+
+            {/* Card 1 - Pesquisa de Clima */}
+            <div className="hover:-translate-y-1 transition-all duration-300 ">
+              <div className="aspect-square w-96 overflow-hidden mx-auto
+              hover:transition-transform duration-500 group-hover:scale-110
+              shadow-md hover:shadow-xl">
+                <img
+                  src="/servicos/empresaEscritorios.jpg"
+                  alt="Empresas e Escritórios"
+                  className="w-96 h-96 object-cover"
+                />
+              </div>
+              <div className="p-6 text-center w-96 mx-auto">
+                <h4 className="text-xl font-bold text-white mb-3">
+                  Pesquisa de Clima
+                </h4>
+                <p className="text-white leading-relaxed text-justify">
+                  A pesquisa de clima organizacional é crucial para compreender a percepção dos colaboradores sobre o ambiente de trabalho, identificando áreas de melhoria como comunicação e motivação. Isso permite desenvolver estratégias que aumentam a satisfação e a produtividade.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 - Avaliação Psicológica */}
+            <div className="hover:-translate-y-1 transition-all duration-300">
+              <div className="aspect-square w-96 overflow-hidden mx-auto
+              hover:transition-transform duration-500 group-hover:scale-110 shadow-md hover:shadow-xl">
+                <img
+                  src="/servicos/porteArmas.jpg"
+                  alt="Avaliação para Posse de Armas"
+                  className="w-96 h-96 object-cover"
+                />
+              </div>
+              <div className="p-6 text-center w-96 mx-auto">
+                <h4 className="text-xl font-bold text-white mb-3">
+                  Avaliação Psicológica
+                </h4>
+                <p className="text-white leading-relaxed text-justify">
+                  Realizo avaliações psicológicas para investigar a aptidão psicológica e mental de indivíduos que buscam o manuseio de armas de fogo. Utilizo técnicas, mecanismos e instrumentos específicos garantindo que a responsabilidade seja atendida.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 - Recrutamento e Seleção */}
+            <div className="hover:-translate-y-1 transition-all duration-300">
+              <div className="aspect-square w-96 overflow-hidden mx-auto
+              hover:transition-transform duration-500 group-hover:scale-110 shadow-md hover:shadow-xl">
+                <img
+                  src="/servicos/recSel.jpg"
+                  alt="Recrutamento e Seleção"
+                  className="w-96 h-96 object-cover"
+                />
+              </div>
+              <div className="p-6 text-center w-96 mx-auto">
+                <h4 className="text-xl font-bold text-white mb-3">
+                  Recrutamento e Seleção
+                </h4>
+                <p className="text-white leading-relaxed text-justify">
+                  Identificar candidatos alinhados não apenas com as habilidades técnicas mas também com a cultura e valores da empresa. Contribuindo na construção de ambientes de trabalho coesos e produtivos.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 4 - Psicoterapia */}
+            <div className="hover:-translate-y-1 transition-all duration-300">
+              <div className="aspect-square w-96 overflow-hidden mx-auto
+              hover:transition-transform duration-500 group-hover:scale-110 shadow-md hover:shadow-xl">
+                <img
+                  src="/servicos/psicoterapia.png"
+                  alt="Psicoterapia"
+                  className="w-96 h-96 object-cover"
+                />
+              </div>
+              <div className="p-6 text-center w-96 mx-auto">
+                <h4 className="text-xl font-bold text-white mb-3">
+                  Psicoterapia
+                </h4>
+                <p className="text-white leading-relaxed text-justify">
+                  As palavras se tornam pontes para o autoconhecimento, guiando jornadas de transformação e crescimento interior. Na escuta atenta, a alma encontra espaço para desvelar suas narrativas e cicatrizar suas feridas.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* Caminhos a seguir */}
+
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h3 className="text-3xl font-bold text-center text-orange-700 mb-10">
+            Caminho do Acolhimento
+          </h3>
+          <p className="text-xl text-center text-orange-700 font-bold mb-6">Trilha da nossa jornada para seu autoconhecimento:</p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+
+            {/* Card 1: Emoções */}
+            <div className="bg-orange-700 hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-xl rounded-xl p-6 text-center border border-white backdrop-blur-sm">
+              <FaSmile className="w-12 h-12 text-white mx-auto mb-4" />
+              <p className="text-white font-medium">Emoções</p>
+            </div>
+
+            {/* Card 2: Rotina */}
+            <div className="bg-orange-700 hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-xl rounded-xl p-6 text-center border border-white/20 backdrop-blur-sm">
+              <FaCalendarAlt className="w-12 h-12 text-white mx-auto mb-4" />
+              <p className="text-white font-medium">Rotina</p>
+            </div>
+
+            {/* Card 3: Relacionamentos */}
+            <div className="bg-orange-700 hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-xl rounded-xl p-6 text-center border border-white/20 backdrop-blur-sm">
+              <FaUsers className="w-12 h-12 text-white mx-auto mb-4" />
+              <p className="text-white font-medium">Relacionamentos</p>
+            </div>
+
+            {/* Card 4: Aprender a se amar */}
+            <div className="bg-orange-700 hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-xl rounded-xl p-6 text-center border border-white/20 backdrop-blur-sm">
+              <FaHeart className="w-12 h-12 text-white mx-auto mb-4" />
+              <p className="text-white font-medium">Aprender a se amar</p>
+            </div>
+
+            {/* Card 5: Diagnóstico */}
+            <div className="bg-orange-700 hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-xl rounded-xl p-6 text-center border border-white/20 backdrop-blur-sm">
+              <FaStethoscope className="w-12 h-12 text-white mx-auto mb-4" />
+              <p className="text-white font-medium">Diagnóstico</p>
+            </div>
+
+            <div className="bg-orange-700 hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-xl rounded-xl p-6 text-center border border-white/20 backdrop-blur-sm">
+              <FaLeaf className="w-12 h-12 text-white mx-auto mb-4" />
+              <p className="text-white font-medium">Tranquilidade</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
     </>
 
-
-    // < section className = "py-16 bg-gray-50" >
-    //   <div className="container mx-auto px-4">
-    //     <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">
-    //       Habilidades
-    //     </h3>
-
-    //     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-    //       {/* Card 1 - Pesquisa de Clima */}
-    //       <div className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row">
-    //         <div className="p-6 flex-1">
-    //           <h4 className="text-xl font-bold text-orange-600 mb-3">
-    //             Pesquisa de Clima
-    //           </h4>
-    //           <p className="text-gray-600 leading-relaxed">
-    //             A pesquisa de clima organizacional é crucial para compreender a percepção dos colaboradores sobre o ambiente de trabalho, identificando áreas de melhoria como comunicação e motivação. Isso permite desenvolver estratégias que aumentam a satisfação e a produtividade.
-    //           </p>
-    //         </div>
-    //         <div className="w-full md:w-48 h-48 md:h-auto overflow-hidden">
-    //           <img
-    //             src="/assets/servicos/empresaEscritorios.jpg"
-    //             alt="Empresas e Escritórios"
-    //             className="w-full h-full object-cover"
-    //           />
-    //         </div>
-    //       </div>
-
-    //       {/* Card 2 - Avaliação Psicológica */}
-    //       <div className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row">
-    //         <div className="p-6 flex-1">
-    //           <h4 className="text-xl font-bold text-orange-600 mb-3">
-    //             Avaliação Psicológica
-    //           </h4>
-    //           <p className="text-gray-600 leading-relaxed">
-    //             Realizo avaliações psicológicas para investigar a aptidão psicológica e mental de indivíduos que buscam o manuseio de armas de fogo. Utilizo técnicas, mecanismos e instrumentos específicos garantindo que a responsabilidade seja atendida.
-    //           </p>
-    //         </div>
-    //         <div className="w-full md:w-48 h-48 md:h-auto overflow-hidden">
-    //           <img
-    //             src="/assets/servicos/porteArmas.jpg"
-    //             alt="Avaliação para Posse de Armas"
-    //             className="w-full h-full object-cover"
-    //           />
-    //         </div>
-    //       </div>
-
-    //       {/* Card 3 - Recrutamento e Seleção */}
-    //       <div className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row">
-    //         <div className="p-6 flex-1">
-    //           <h4 className="text-xl font-bold text-orange-600 mb-3">
-    //             Recrutamento e Seleção
-    //           </h4>
-    //           <p className="text-gray-600 leading-relaxed">
-    //             Identificar candidatos alinhados não apenas com as habilidades técnicas mas também com a cultura e valores da empresa. Contribuindo na construção de ambientes de trabalho coesos e produtivos.
-    //           </p>
-    //         </div>
-    //         <div className="w-full md:w-48 h-48 md:h-auto overflow-hidden">
-    //           <img
-    //             src="/assets/servicos/recSel.jpg"
-    //             alt="Recrutamento e Seleção"
-    //             className="w-full h-full object-cover"
-    //           />
-    //         </div>
-    //       </div>
-
-    //       {/* Card 4 - Psicoterapia */}
-    //       <div className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row">
-    //         <div className="p-6 flex-1">
-    //           <h4 className="text-xl font-bold text-orange-600 mb-3">
-    //             Psicoterapia
-    //           </h4>
-    //           <p className="text-gray-600 leading-relaxed">
-    //             As palavras se tornam pontes para o autoconhecimento, guiando jornadas de transformação e crescimento interior. Na escuta atenta, a alma encontra espaço para desvelar suas narrativas e cicatrizar suas feridas.
-    //           </p>
-    //         </div>
-    //         <div className="w-full md:w-48 h-48 md:h-auto overflow-hidden">
-    //           <img
-    //             src="/assets/servicos/psicoterapia.png"
-    //             alt="Psicoterapia"
-    //             className="w-full h-full object-cover"
-    //           />
-    //         </div>
-    //       </div>
-
-    //     </div>
-    //   </div>
-    // </section >
 
   )
 }
