@@ -2,6 +2,7 @@ import { Navbar } from './components/navbar'
 import { Inicio } from './components/home'
 import { Footer } from './components/footer'
 import { Sobre } from './components/sobre'
+import { Empresas } from './components/empresas'
 
 import {
   Route,
@@ -28,9 +29,8 @@ const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Inicio />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/empresas" element={<Empresas />} />
         {/* <Route index element={<Home />} />
-        <Route path="/projetos" element={<Projects />} />
-        <Route path="/formacao" element={<Formacao />} />
         <Route path="/resumo" element={<Resumo />} />
         <Route path="/contato" element={<Contato />} /> */}
       </Route>
