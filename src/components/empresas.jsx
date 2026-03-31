@@ -52,7 +52,7 @@ const Empresas = () => {
           </div>
         </div>
       </div >
-
+              {/* Serviços Empresariais */}
       <div className="bg-orange-700 py-12">
         <div className="container mx-auto px-4">
           <h2 className="efeito_titulo mb-6 mt-n2 title text-center text-2xl font-bold text-white">Sua empresa e as pessoas bem cuidadas de verdade.</h2>
@@ -113,7 +113,7 @@ const Empresas = () => {
               Atendimento presencial e online • Primeira conversa sem compromisso
             </p> */}
             <div className="flex flex-wrap justify-center gap-4 mt-8 text-orange-600 font-bold">
-              <span className="flex items-center gap-1"><FaStar /> Aderência às normas</span>
+              <span className="flex items-center gap-1"><FaStar /> Adequação normativa</span>
               <span className="flex items-center gap-1"><FaStar /> Competência técnica</span>
               <span className="flex items-center gap-1"><FaStar /> Impacto real</span>
               <span className="flex items-center gap-1"><FaStar /> Versatilidade</span>
