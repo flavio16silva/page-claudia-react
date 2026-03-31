@@ -57,9 +57,9 @@ const Sobre = () => {
                 Tenho aptidão para identificar os perfis comportamentais e as necessidades que estão ocultas, conectando pessoas ao seu potencial. No ambiente corporativo, essa habilidade se traduz em produtividade real: equipes mais alinhadas, comunicação eficiente e resultados que nascem do bem-estar coletivo. Empresas que investem em pessoas colhem equipes mais fortes e sustentáveis. E isso fortalece laços e pessoas.
               </p>
             </div>
-
           </div>
 
+           {/*Saiba Mais */} 
           <div className="flex justify-center mt-12">
             <a
               href="#habilidades"
@@ -116,7 +116,6 @@ const Sobre = () => {
       </div>
 
       {/* Habilidades */}
-
       <div className="py-16 bg-orange-700">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center text-white mb-12">
@@ -211,7 +210,6 @@ const Sobre = () => {
       </div>
 
       {/* Caminhos a seguir */}
-
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center text-orange-700 mb-10">
