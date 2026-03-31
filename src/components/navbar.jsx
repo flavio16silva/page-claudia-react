@@ -8,13 +8,12 @@ const Navbar = () => {
   const navItems = [
     { path: "/", label: "inicio" },
     { path: "/sobre", label: "sobre" },
-    { path: "/projetos", label: "habilidades" },
-    { path: "/formacao", label: "empresariais" },
+    { path: "/formacao", label: "empresas" },
     { path: "/resumo", label: "consultoria" },
     { path: "/contato", label: "contato" }
   ]
   return (
-    <nav className="top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-md">
+    <nav className="top-0 left-0 right-0 z-50 bg-white/80 shadow-md">
       <div className={containerClass}>
         <div className="flex items-center h-16">
           <button
@@ -46,7 +45,7 @@ const Navbar = () => {
 
           {/* Menu mobile */}
           {isMenuOpen && (
-            <div className="absolute top-16 left-0 bg-white backdrop-blur-sm md:hidden w-64 border-r border-gray-800 shadow-xl">
+            <div className="absolute top-16 left-0 bg-white backdrop-blur-sm md:hidden w-64 border-r border-gray-800 shadow-xl z-9999">
               <ul className="flex flex-col items-center py-4 px-6 space-y-4">
                 {navItems.map(item => (
                   <li key={item.path} className="w-full">
