@@ -39,7 +39,7 @@ const Sobre = () => {
                 Realizo as avaliações psicológicas e desenvolvo programas de capacitação personalizados, voltados para o aprimoramento de habilidades interpessoais e a criação de ambientes de trabalho mais saudáveis e produtivos.
               </p>
 
-              <p className="text-lg text-white leading-relaxed mb-4 text-left md:text-justify">
+              <p className="text-lg text-white leading-relaxed mb-4 text-justify md:text-justify">
                 Minha dedicação às pessoas vai além da escuta. Utilizo técnicas e instrumentos avançados, baseados em evidências científicas, para compreender a fundo suas necessidadesmais internas. Cada ferramenta é escolhida com rigor, garantindo um acompanhamento preciso e eficaz, onde você se sente seguro para se abrir e transformar.
               </p>
             </div>
@@ -47,13 +47,13 @@ const Sobre = () => {
             {/* COLUNA 3 */}
             <div className="md:w-1/3">
               <div className="h-10 md:h-8 "></div>
-              <p className="text-lg text-white leading-relaxed mb-4 text-left md:text-justify">
+              <p className="text-lg text-white leading-relaxed mb-4 text-justify md:text-justify">
                 Como uma palestrante motivacional, compartilho conhecimentos sobre inteligência emocional, superação e liderança, inspirando pessoas e equipes a atingirem seu pleno potencial.
               </p>
-              <p className="text-lg text-white leading-relaxed mb-4 text-left md:text-justify">
+              <p className="text-lg text-white leading-relaxed mb-4 text-justify md:text-justify">
                 Minha abordagem é acolhedora e personalizada, respeitando o tempo e as necessidades de cada pessoa que confia em mim sua melhor jornada de autoconhecimento.
               </p>
-              <p className="text-lg text-white leading-relaxed mb-4 text-left md:text-justify">
+              <p className="text-lg text-white leading-relaxed mb-4 text-justify md:text-justify">
                 Tenho aptidão para identificar os perfis comportamentais e as necessidades que estão ocultas, conectando pessoas ao seu potencial. No ambiente corporativo, essa habilidade se traduz em produtividade real: equipes mais alinhadas, comunicação eficiente e resultados que nascem do bem-estar coletivo. Empresas que investem em pessoas colhem equipes mais fortes e sustentáveis. E isso fortalece laços e pessoas.
               </p>
             </div>
