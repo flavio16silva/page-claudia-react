@@ -2,6 +2,7 @@ import { cards } from "../data/cards"
 import { frases } from "../data/frases"
 import { escolha } from "../data/escolha"
 import { FaWhatsapp } from 'react-icons/fa'
+import { PiButterfly } from 'react-icons/pi'
 
 const Inicio = () => {
   return (
@@ -17,8 +18,11 @@ const Inicio = () => {
               <p className="text-white mb-6">CRP: 03/17035</p>
 
               <div className="bg-red-50 p-5 rounded-xl mb-6">
-                <p className="text-lg md:text-xl text-red-700 italic">
-                  Como é difícil começar, mas como é fácil conseguir quando você não está sozinho(a).
+                <p className="text-lg md:text-xl text-orange-700 italic">
+                  &quot;Não haverá borboletas se a vida não passar por longas e silenciosas metamorfoses.&quot;
+                </p>
+                <p className="text-right text-orange-700 font-semibold mt-2">
+                  — Rubem Alves
                 </p>
               </div>
 
@@ -29,7 +33,7 @@ const Inicio = () => {
               </p>
             </div>
 
-            <div className="flex-1 flex justify-center">
+            {/* <div className="flex-1 flex justify-center">
               <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl border-4 border-white ring-2 ring-red-200 mb-4 ">
                 <img
                   src="/clau_foto.png"
@@ -37,6 +41,26 @@ const Inicio = () => {
                   className="w-full h-full object-cover animate-breathingZoom"
                 />
               </div>
+            </div> */}
+            <div className="flex-1 flex justify-center relative">
+              {/* Borboleta superior direita */}
+              <PiButterfly className="absolute -top-2 -right-2 left-10 md:-top-1 md:-right-1 text-3xl text-white animate-float" />
+
+              {/* Borboleta superior esquerda */}
+              <PiButterfly className="absolute -top-4 -left-4 md:-top-2 md:-left-2 text-xl text-white animate-float-slow" />
+
+              {/* Borboleta inferior esquerda */}
+              <PiButterfly className="absolute -bottom-1 -left-2 md:-bottom md:-left-1 text-2xl text-white animate-float-delayed" />
+
+              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl border-4 border-white ring-2 ring-red-200 mb-4">
+                <img
+                  src="/clau_foto.png"
+                  alt="Dra. Claudia Palma"
+                  className="w-full h-full object-cover animate-breathingZoom"
+                />
+              </div>
+              {/* Borboleta inferior direita */}
+              <PiButterfly className="absolute bottom-0 right-0 md:bottom-1 md:right-1 left-10 text-3xl text-white animate-float" />
             </div>
           </div>
         </div>
