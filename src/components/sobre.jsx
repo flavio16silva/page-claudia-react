@@ -40,7 +40,7 @@ const Sobre = () => {
               </p>
 
               <p className="text-lg text-white leading-relaxed mb-4 text-justify md:text-justify">
-                Minha dedicação às pessoas vai além da escuta. Utilizo técnicas e instrumentos avançados, baseados em evidências científicas, para compreender a fundo suas necessidadesmais internas. Cada ferramenta é escolhida com rigor, garantindo um acompanhamento preciso e eficaz, onde você se sente seguro para se abrir e transformar.
+                Minha dedicação às pessoas vai além da escuta. Utilizo técnicas e instrumentos, baseados em evidências científicas, para compreender a fundo suas necessidades mais internas. Cada ferramenta é escolhida com rigor, garantindo um acompanhamento preciso e eficaz, onde você se sente seguro para se abrir e transformar.
               </p>
             </div>
 
@@ -59,15 +59,21 @@ const Sobre = () => {
             </div>
           </div>
 
-           {/*Saiba Mais */} 
+          {/*Saiba Mais */}
           <div className="flex justify-center mt-12">
-            <a
-              href="#habilidades"
-              className="inline-flex items-center gap-2 bg-white text-orange-600 px-6 py-3 rounded-lg transition-colors animate-pulseButton"
+            <button
+              onClick={() => {
+                const section = document.getElementById('habilidades')
+                if (section) {
+                  section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              }}
+              className="inline-flex items-center gap-2 bg-white text-orange-600 px-6 py-3 rounded-lg transition-colors 
+              hover:bg-orange-600 hover:text-white cursor-pointer animate-pulseButton"
             >
               Saiba Mais!
               <span className="text-lg">↓</span>
-            </a>
+            </button>
           </div>
 
         </div>
@@ -91,7 +97,7 @@ const Sobre = () => {
 
                 {/* Botão principal */}
                 <a
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/5571988232921"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative flex items-center gap-3 bg-red-400 text-white px-8 py-4 rounded-full 
@@ -116,7 +122,7 @@ const Sobre = () => {
       </div>
 
       {/* Habilidades */}
-      <div className="py-16 bg-orange-700">
+      <div id="habilidades" className="py-16 bg-orange-700">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center text-white mb-12">
             Habilidades
