@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import { useState } from "react"
+import { PiButterfly } from "react-icons/pi"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -41,6 +42,12 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
+          {/* LOGO */}
+          <Link to="/" className="flex items-center ml-auto gap-2">
+            <PiButterfly className="h-6 w-6 text-orange-700" />
+            <span className="text-orange-700 font-semibold">Claudia Palma</span>
+          </Link>
 
           {/* Menu mobile */}
           {isMenuOpen && (
