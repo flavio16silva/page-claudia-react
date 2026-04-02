@@ -61,7 +61,7 @@ const Inicio = () => {
 
                 {/* Botão principal */}
                 <a
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/5571988232921"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative flex items-center gap-3 bg-red-400 text-white px-8 py-4 rounded-full 
@@ -78,7 +78,7 @@ const Inicio = () => {
 
             {/* Texto adicional */}
             <p className="text-sm text-gray-500 mt-6">
-              Atendimento presencial e online • Primeira conversa sem compromisso
+              Atendimento presencial e online • Primeiro acolhimento sem compromisso
             </p>
 
           </div>
@@ -164,7 +164,7 @@ const Inicio = () => {
               Estou aqui para ajudar você.
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Fale, desabafe, pense, supere seus desafios.
+              Fale, desabafe, pense, resignifique seus desafios.
             </p>
 
             <div className="flex justify-center">
@@ -175,7 +175,7 @@ const Inicio = () => {
 
                 {/* Botão principal */}
                 <a
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/5571988232921"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative flex items-center gap-3 bg-red-400 text-white px-8 py-4 rounded-full 
