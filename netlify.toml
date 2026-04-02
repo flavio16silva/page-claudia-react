@@ -1,0 +1,9 @@
+# netlify.toml
+[build]
+  command = "npm run build"  # Comando para gerar a versão final
+  publish = "dist"           # Pasta onde o Vite gera os arquivos
+
+[[redirects]]
+  from = "/*"                # Redireciona todas as rotas
+  to = "/index.html"         # para o index.html
+  status = 200               # Isso é crucial para o React Router funcionar
