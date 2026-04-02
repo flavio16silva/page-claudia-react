@@ -7,7 +7,7 @@ import { PiButterfly } from 'react-icons/pi'
 const Inicio = () => {
   return (
     <>
-      <div className="bg-orange-700 py-3 pt-12">
+      <div id="inicio" className="bg-orange-700 py-3 pt-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8 max-w5xl mx-auto">
 
