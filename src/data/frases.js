@@ -6,8 +6,8 @@ export const frases = [
   },
   {
     id: 2,
-    texto: "Se você planeja ser qualquer coisa menos do que aquilo que você é capaz, provavelmente você será infeliz todos os dias de sua vida.",
-    autor: "Abraham Maslow"
+    texto: "A cura não está no saber do terapeuta, mas no relacionamento que se estabelece entre ele e o paciente.",
+    autor: "Irvin D. Yalom"
   },
   {
     id: 3,
