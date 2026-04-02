@@ -3,6 +3,7 @@ import { Inicio } from './components/home'
 import { Footer } from './components/footer'
 import { Sobre } from './components/sobre'
 import { Empresas } from './components/empresas'
+import { Contato } from './components/contato'
 
 import {
   Route,
@@ -30,6 +31,7 @@ const App = () => {
         <Route index element={<Inicio />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/empresas" element={<Empresas />} />
+        <Route path="/contato" element={<Contato />} />
         {/* <Route index element={<Home />} />
         <Route path="/resumo" element={<Resumo />} />
         <Route path="/contato" element={<Contato />} /> */}
