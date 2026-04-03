@@ -32,16 +32,6 @@ const Inicio = () => {
                 que você possa se reconhecer, se acolher e construir uma vida mais leve.
               </p>
             </div>
-
-            {/* <div className="flex-1 flex justify-center">
-              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl border-4 border-white ring-2 ring-red-200 mb-4 ">
-                <img
-                  src="/clau_foto.png"
-                  alt="Dra. Claudia Palma"
-                  className="w-full h-full object-cover animate-breathingZoom"
-                />
-              </div>
-            </div> */}
             <div className="flex-1 flex justify-center relative">
               {/* Borboleta superior direita */}
               <PiButterfly className="absolute -top-2 -right-2 left-10 md:-top-1 md:-right-1 text-3xl text-white animate-float" />
@@ -57,6 +47,7 @@ const Inicio = () => {
                   src="/clau_foto.png"
                   alt="Dra. Claudia Palma"
                   className="w-full h-full object-cover animate-breathingZoom"
+                  loading="lazy"
                 />
               </div>
               {/* Borboleta inferior direita */}
@@ -124,6 +115,7 @@ const Inicio = () => {
                   src={card.image}
                   alt={card.alt}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/60 md:opacity-0 md:group-hover:opacity-100 
                 transition-opacity duration-300 flex items-center justify-center">

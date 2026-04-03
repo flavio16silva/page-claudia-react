@@ -23,6 +23,7 @@ const Empresas = () => {
                 src="/maos_unidas.png"
                 alt="Serviços Empresariais"
                 className="w-full h-125 md:h-150 object-cover"
+                loading="lazy"
               />
             </div>
 

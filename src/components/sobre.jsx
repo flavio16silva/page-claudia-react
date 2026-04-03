@@ -139,6 +139,7 @@ const Sobre = () => {
                   src="/servicos/empresaEscritorios.jpg"
                   alt="Empresas e Escritórios"
                   className="w-96 h-96 object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6 text-center w-96 mx-auto">
@@ -159,6 +160,7 @@ const Sobre = () => {
                   src="/servicos/porteArmas.jpg"
                   alt="Avaliação para Posse de Armas"
                   className="w-96 h-96 object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6 text-center w-96 mx-auto">
@@ -179,6 +181,7 @@ const Sobre = () => {
                   src="/servicos/recSel.jpg"
                   alt="Recrutamento e Seleção"
                   className="w-96 h-96 object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6 text-center w-96 mx-auto">
@@ -199,6 +202,7 @@ const Sobre = () => {
                   src="/servicos/psicoterapia.png"
                   alt="Psicoterapia"
                   className="w-96 h-96 object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6 text-center w-96 mx-auto">

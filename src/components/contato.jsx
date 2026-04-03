@@ -11,7 +11,10 @@ const Contato = () => {
 
             {/* Esquerda */}
             <div className="flex flex-col items-center text-center">
-              <img src="/clauInteira.jpeg" alt="Dra. Claudia" className="w-72 h-96 rounded-4xl object-cover shadow-lg mb-6" />
+              <img
+                src="/clauInteira.jpeg" alt="Dra. Claudia" className="w-72 h-96 rounded-4xl object-cover shadow-lg mb-6"
+                loading="lazy"
+              />
               <p className="text-white italic">Sua mensagem é o primeiro passo. Ficarei feliz em conversar com você.</p>
               <p className="text-white mt-2">— Dra. Claudia Palma</p>
             </div>
