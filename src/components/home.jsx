@@ -194,14 +194,17 @@ const Inicio = () => {
                   href="https://wa.me/5571988232921"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative flex items-center gap-3 bg-red-400 text-white px-8 py-4 rounded-full 
-                     font-semibold text-lg shadow-xl hover:shadow-2xl hover:bg-orange-700
+                  className="relative flex items-center justify-center 
+                  gap-2 md:gap-2 bg-red-400 text-white 
+                  px-4 py-2 md:px-8 md:py-4 rounded-full 
+                     font-semibold text-base md:text-lg 
+                     shadow-xl hover:shadow-2xl hover:bg-orange-700
                      transition-all duration-300 z-10
-                     animate-pulseButton"
+                     animate-pulseButton w-full"
                 >
                   {/* Ícone WhatsApp */}
-                  <FaWhatsapp size={24} />
-                  <span>Ainda com dúvida? Vamos conversar!</span>
+                  <FaWhatsapp size={20} className="md:w-6 md:h-6" />
+                  <span>Com dúvida? Vamos conversar!</span>
                 </a>
               </div>
             </div>
