@@ -9,7 +9,7 @@ const Empresas = () => {
         <div className="container mx-auto mb-3 p-2 relative z-10">
           <div className="flex flex-col md:flex-row gap-0 mt-8 ">
             {/* Lado ESQUERDO - Imagem tocando na borda */}
-            <div className="md:w-3/5 bg-orange-700 items-center justify-center md:-ml-16 lg:-ml-24">
+            <div className="md:w-3/5 bg-orange-700 items-center justify-center md:-ml-4 lg:-ml-8">
               <div className="mt-5 text-center">
                 <h2 className="efeito_titulo mb-4 mt-10 title text-3xl font-bold text-white">
                   Serviços Empresariais
