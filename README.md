@@ -1,16 +1,79 @@
-# React + Vite
+# Site Institucional - Dra. Claudia Palma
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional desenvolvido para uma psicóloga, com foco em transmitir conforto, aconchego e acolhimento aos pacientes.
 
-Currently, two official plugins are available:
+## 🎯 Objetivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Criar um ambiente digital que transmitisse segurança e cuidado, com navegação fluida, design responsivo e conteúdo de fácil compreensão.
 
-## React Compiler
+## 🎨 Paleta de Cores
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A paleta foi pensada para transmitir **calma, confiança e acolhimento**:
+- Tons de laranja - aconchego e equilíbrio
+- Branco - leveza e clareza
+- Cinza - profissionalismo e elegância
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (SPA - Single Page Application)
+- **TailwindCSS** - Estilização ágil e responsiva
+- **Vite** - Build rápido e desenvolvimento eficiente
+- **React Router** - Navegação SPA sem recarregamentos
+- **React Icons** - Biblioteca de ícones
+- **Git/GitHub** - Versionamento de código
+- **Netlify** - Deploy e hospedagem
+
+## ✨ Destaques do Projeto
+
+- SPA com navegação fluida
+- Layout limpo e acolhedor
+- Cards informativos e diretos
+- Animações sutis
+- Paleta de cores pensada para transmitir calma e confiança
+- Componentes reutilizáveis
+- Código limpo e organizado
+- Totalmente responsivo (mobile, tablet e desktop)
+
+## 📱 Responsividade
+
+O projeto foi desenvolvido com abordagem **mobile-first**, garantindo experiência consistente em todos os tamanhos de tela. Testes manuais e ajustes finos foram essenciais para o bom comportamento dos componentes.
+
+## 🚀 Como executar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/page-claudia-react.git
+
+# Acesse a pasta do projeto
+cd page-claudia-react
+
+# Instale as dependências
+npm install
+
+# Execute o projeto em modo de desenvolvimento
+npm run dev
+```
+
+🌐 Deploy
+
+O deploy foi realizado no Netlify com integração contínua ao GitHub. Cada novo commit atualiza automaticamente o site em poucos minutos.
+
+🔗 Link do projeto: https://claudiapalma.netlify.app/
+
+📚 Aprendizados
+ - Componentização no React
+ - Refatoração de código
+ - Otimização de imagens
+ - Organização de layout com TailwindCSS
+ - Uso de breakpoints responsivos
+ - Animações com Tailwind e CSS
+
+📄 Licença
+Este projeto está sob a licença MIT.
+
+Desenvolvido com ☕ e dedicação por Flávio Silva
+
+
+
+# Gere a build para produção
+npm run build
